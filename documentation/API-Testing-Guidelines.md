@@ -214,8 +214,7 @@ Background:
 ```
 E.g.: `@location_verification_10_device_empty`
 
-* `Scenario Outline` may be used at convenience with an `Examples` section. 
-
+* Each tested error response SHOULD be covered by its own scenario. `Scenario Outline` with an `Examples` section MAY be used to cover the same behaviour for several inputs or operations (e.g. `401 UNAUTHENTICATED` for all operations). For behaviour that is specific to an operation, separate scenarios or one feature file per operation (see [Location of feature files](#location-of-feature-files)) are preferred.
 
 ### Request setup
 
